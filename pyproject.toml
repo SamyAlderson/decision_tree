@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "decision_tree"
+version = "0.1.0"
+description = "A simple decision tree implementation in Python for data science tasks"
+authors = ["Samy Alderson <samya@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.22.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.toml]
+tool.set = "poetry"
+
+[tool.poetry.source]
+name = "decision_tree-source"
+version = "0.1.0"
+description = "Source code for decision tree"
+
+[tool.poetry.includes]
+src = "**"
+
+[tool.poetry.source]
+name = "tests"
+version = "0.1.0"
+description = "Test suite for decision tree"
+
+[tool.poetry.includes]
+tests = "**"
+
+[tool.poetry.source]
+name = "docs"
+version = "0.1.0"
+description = "Documentation for decision tree"
+
+[tool.poetry.includes]
+docs = "**"
