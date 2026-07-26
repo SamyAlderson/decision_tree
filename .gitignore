@@ -1,34 +1,13 @@
 # .gitignore
 
-# ignore ruff config
-.ruffconfig
-
-# ignore ruff cache
-.ruffcache
-
-# ignore ruff logs
-.rufflog
-
-# ignore virtual environment
-venv/
-
 # ignore node_modules
 node_modules/
 
-# ignore pycache
-__pycache__/
+# ignore ruff cache
+.ruff_cache/
 
-# ignore build artifacts
-build/
+# ignore ruff config
+.ruffconfig
 
-# ignore dist artifacts
-dist/
-
-# ignore .vscode folder
-.vscode/
-
-# ignore .idea folder
-.idea/
-
-# ignore .DS_Store
-.DS_Store
+# ignore venv
+venv/
