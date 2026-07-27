@@ -1,13 +1,27 @@
 # .gitignore
 
-# ignore node_modules
-node_modules/
+# ignore node_modules and yarn.lock for now
+node_modules
+yarn.lock
 
-# ignore ruff cache
-.ruff_cache/
+# ignore build and dist dirs
+build
+dist
 
-# ignore ruff config
-.ruffconfig
+# ignore IDE config files
+.idea
+.vscode
 
-# ignore venv
-venv/
+# ignore Docker stuff
+docker-compose.yml
+docker-compose.yaml
+docker/
+
+# ignore secrets
+.env
+
+# ignore coverage reports
+coverage/
+
+# ignore pyc files
+*.pyc
