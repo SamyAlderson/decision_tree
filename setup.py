@@ -5,13 +5,14 @@ try:
         config = f.read()
 except FileNotFoundError:
     print("Warning: pyproject.toml not found, skipping long description.")
+    config = None
 
 setup(
     name="decision_tree",
     version="1.0",
     description="A simple decision tree implementation in Python for data science tasks",
     long_description=config if config else "No long description available.",
-    long_description_content_type="text/plain",  # Changed to text/plain
+    long_description_content_type="text/plain",
     author="Samy Alderson",
     author_email="samy.alderson@example.com",
     packages=find_packages("src"),
@@ -28,5 +29,9 @@ setup(
         "Programming Language :: Python :: 3.11",
     ],
     keywords="decision_tree data_science python",
-    python_requires=">=3.9",  # Added python version requirement
+    python_requires=">=3.9",
+    project_urls={
+        "Documentation": "https://github.com/SamyAlderson/decision_tree",
+        "Source Code": "https://github.com/SamyAlderson/decision_tree"
+    }
 )
