@@ -10,7 +10,7 @@ except FileNotFoundError:
 setup(
     name="decision_tree",
     version="1.0",
-    description="A simple decision tree implementation in Python for data science tasks",
+    description="Simple decision tree for data science tasks",
     long_description=config if config else "No long description available.",
     long_description_content_type="text/plain",
     author="Samy Alderson",
